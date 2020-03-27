@@ -1,0 +1,18 @@
+{
+  "name": "dental-visit",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Nihi1anth/nihi1anth.github.io.git"
+  },
+  "keywords": [],
+  "author": "nihi1anth <ishaltbecome@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Nihi1anth/nihi1anth.github.io/issues"
+  },
+  "homepage": "https://github.com/Nihi1anth/nihi1anth.github.io#readme"
+}

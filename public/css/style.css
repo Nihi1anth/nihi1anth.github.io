@@ -1,113 +1,125 @@
 @import url('https://fonts.googleapis.com/css?family=Pacifico|Roboto&display=swap');
-
 body {
-    background-color: #f8f9fa;
+  background-color: #f8f9fa;
 }
 
 .header {
-    background-color: #f8f9fa;
-    height: auto;
-    padding: 1rem 0rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  background-color: #f8f9fa;
+  height: auto;
+  padding: 1rem 0rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .brand {
-    position: relative;
-    justify-content: center;
-    display: flex;
-    align-items: center;
+  position: relative;
+  justify-content: center;
+  display: flex;
+  align-items: center;
 }
 
 .brand_title {
-    font-family: 'Pacifico', cursive;
-    font-size: 52px;
-    color: blue;
-    padding-left: 5px;
+  font-family: 'Pacifico', cursive;
+  font-size: 52px;
+  color: blue;
+  padding-left: 5px;
 }
 
 .brand_icon {
-    width: 3rem;
-    height: 3.2rem;
-    margin: 10px;
+  width: 3rem;
+  height: 3.2rem;
+  margin: 10px;
 }
 
 .brand_slogan {
-    font-family: 'Roboto', sans-serif;
-    font-size: 16px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
 }
 
 .c {
-    background-color: #f8f9fa;
+  background-color: #f8f9fa;
 }
 
 #info-block {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    font-family: 'Roboto', sans-serif;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: 'Roboto', sans-serif;
 }
 
 .adress {
-    background-color: #f8f9fa;
-    height: 80px;
-    text-align: center;
+  background-color: #f8f9fa;
+  height: 80px;
+  text-align: center;
 }
 
 .adress div {
-    display: flex;
-    justify-content: center;
+  display: flex;
+  justify-content: center;
 }
 
 .adress div h5 {
-    margin: 0;
-    padding-left: 10px;
+  margin: 0;
+  padding-left: 10px;
 }
 
 .adress p {
-    margin: 0;
-    padding: 0;
-    font-size: 1em;
+  margin: 0;
+  padding: 0;
+  font-size: 1em;
 }
 
 .work-time {
-    text-align: center;
-    background-color: #e5eff8;
-    height: 80px;
-    padding: 15px;
+  text-align: center;
+  background-color: #e5eff8;
+  height: 80px;
+  padding: 15px;
 }
 
 .work-time p {
-    margin: 0;
+  margin: 0;
 }
 
 .phone {
-    background-color: #f8f9fa;
-    text-align: center;
-    height: 80px;
-    padding: 5px;
+  background-color: #f8f9fa;
+  text-align: center;
+  height: 80px;
+  padding: 5px;
 }
 
 .phone div {
-    display: flex;
-    justify-content: center;
+  display: flex;
+  justify-content: center;
 }
 
 .phone div h5 {
-    margin: 0;
-    padding-left: 10px;
+  margin: 0;
+  padding-left: 10px;
 }
 
 .phone p {
-    margin: 0;
+  margin: 0;
 }
 
 #map h2 {
-    text-align: center;
-    font-size: 1.5rem;
+  text-align: center;
+  font-size: 1.5rem;
 }
 
+#props h2 {
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+#bank h2 {
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+table {
+  font-family: 'Roboto', sans-serif;
+}
 
 /* 
   ##Device = Low Resolution Tablets, Mobiles (Landscape)
@@ -115,68 +127,57 @@ body {
 */
 
 @media (min-width: 481px) and (max-width: 767px) {
-  
-    .brand_title {
-        font-family: 'Pacifico', cursive;
-        font-size: 38px;
-        padding-left: 5px;
-    }
-    
-    .brand_icon {
-        width: 3rem;
-        height: 3.2rem;
-        margin: 10px;
-    }
-    
-    .brand_slogan {
-        font-family: 'Roboto', sans-serif;
-        font-size: 20px;
-    }
-
-    .phone div h5 {
-        margin: 0;
-        padding-left: 10px;
-        font-size: 1rem;
-    }
-    
-    .phone p {
-        margin: 0;
-        font-size: 1rem;
-    }
-
-    #banner {
-        object-fit: cover;
-        height: 200px;
-    }   
+  .brand_title {
+    font-family: 'Pacifico', cursive;
+    font-size: 38px;
+    padding-left: 5px;
   }
-  
-  /* 
+  .brand_icon {
+    width: 3rem;
+    height: 3.2rem;
+    margin: 10px;
+  }
+  .brand_slogan {
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+  }
+  .phone div h5 {
+    margin: 0;
+    padding-left: 10px;
+    font-size: 1rem;
+  }
+  .phone p {
+    margin: 0;
+    font-size: 1rem;
+  }
+  #banner {
+    object-fit: cover;
+    height: 200px;
+  }
+}
+
+/* 
     ##Device = Most of the Smartphones Mobiles (Portrait)
     ##Screen = B/w 320px to 479px
   */
-  
-  @media (min-width: 320px) and (max-width: 480px) {
-    
-    .brand_title {
-        font-family: 'Pacifico', cursive;
-        font-size: 32px;
-        padding-left: 5px;
-    }
-    
-    .brand_icon {
-        width: 3rem;
-        height: 3.2rem;
-        margin: 10px;
-    }
-    
-    .brand_slogan {
-        font-family: 'Roboto', sans-serif;
-        font-size: 16px;
-    }
 
-    #banner {
-        object-fit: cover;
-        height: 200px;
-    }
-    
+@media (min-width: 320px) and (max-width: 480px) {
+  .brand_title {
+    font-family: 'Pacifico', cursive;
+    font-size: 32px;
+    padding-left: 5px;
   }
+  .brand_icon {
+    width: 3rem;
+    height: 3.2rem;
+    margin: 10px;
+  }
+  .brand_slogan {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+  }
+  #banner {
+    object-fit: cover;
+    height: 200px;
+  }
+}

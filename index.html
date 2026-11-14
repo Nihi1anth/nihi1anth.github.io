@@ -1,155 +1,112 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="ru">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Стоматология Визит</title>
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-  <link rel="stylesheet" href="/public/css/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Стоматология Визит в Белом Яре — Официальный сайт</title>
+    <link rel="stylesheet" href="./public/css/style.css">
 </head>
-
 <body>
-  <div class="header">
-    <div class="brand">
-      <div class="brand_title">Визит</div>
-      <img src="/public/images/tooth_dental_icon_h700.png" class="brand_icon" alt="">
-      <div class="brand_slogan">стоматологическая <br> клиника</div>
-    </div>
-  </div>
 
-  <div class="container">
-    <div id="info-block" class="row">
-      <div class="col-sm adress">
-        <div>
-          <svg class="bi bi-geo-alt" width="1.5em" height="1.5em" viewBox="0 0 16 16" fill="currentColor"
-            xmlns="http://www.w3.org/2000/svg">
-            <path fill-rule="evenodd" d="M8 16s6-5.686 6-10A6 6 0 002 6c0 4.314 6 10 6 10zm0-7a3 3 0 100-6 3 3 0 000 6z"
-              clip-rule="evenodd" />
-          </svg>
-          <h5>Адрес</h5>
+    <!-- Шапка сайта -->
+    <header class="site-header">
+        <div class="container header-box">
+            <div class="logo">
+                <span class="logo-title">ВИЗИТ</span>
+                <span class="logo-sub">стоматологическая клиника</span>
+            </div>
+            <nav class="main-nav">
+                <a href="#services">Услуги</a>
+                <a href="#doctors">Врачи</a>
+                <a href="#info">Правовая информация</a>
+                <a href="#contacts">Контакты</a>
+            </nav>
+            <div class="header-actions">
+                <button id="accessible-btn" class="btn-accessible" aria-label="Версия для слабовидящих">Глаз</button>
+                <a href="tel:+73904121254" class="phone-link"><strong>+7 (39041) 2-12-54</strong></a>
+                <button class="btn-primary" onclick="openModal()">Записаться</button>
+            </div>
         </div>
-        <p>село Белый Яр</p>
-        <p>улица Ленина, 51А</p>
-      </div>
-      <div class="col-sm work-time">
-        <p>пн-пт: 9:00 - 17:00</p>
-        <p>сб-вс: выходной</p>
-      </div>
-      <div class="col-sm phone">
-        <div>
-          <svg class="bi bi-calendar" width="1.5em" height="1.5em" viewBox="0 0 16 16" fill="currentColor"
-            xmlns="http://www.w3.org/2000/svg">
-            <path fill-rule="evenodd"
-              d="M14 0H2a2 2 0 00-2 2v12a2 2 0 002 2h12a2 2 0 002-2V2a2 2 0 00-2-2zM1 3.857C1 3.384 1.448 3 2 3h12c.552 0 1 .384 1 .857v10.286c0 .473-.448.857-1 .857H2c-.552 0-1-.384-1-.857V3.857z"
-              clip-rule="evenodd" />
-            <path fill-rule="evenodd"
-              d="M6.5 7a1 1 0 100-2 1 1 0 000 2zm3 0a1 1 0 100-2 1 1 0 000 2zm3 0a1 1 0 100-2 1 1 0 000 2zm-9 3a1 1 0 100-2 1 1 0 000 2zm3 0a1 1 0 100-2 1 1 0 000 2zm3 0a1 1 0 100-2 1 1 0 000 2zm3 0a1 1 0 100-2 1 1 0 000 2zm-9 3a1 1 0 100-2 1 1 0 000 2zm3 0a1 1 0 100-2 1 1 0 000 2zm3 0a1 1 0 100-2 1 1 0 000 2z"
-              clip-rule="evenodd" />
-          </svg>
-          <h5>Запись на приём</h5>
+    </header>
+
+    <!-- Главный баннер -->
+    <section class="hero">
+        <div class="container">
+            <h1>Здоровые улыбки в Белом Яре</h1>
+            <p>Профессиональная стоматологическая помощь без боли. Современные методы лечения и протезирования для всей семьи.</p>
+            <button class="btn-secondary" onclick="openModal()">Записаться на приём</button>
         </div>
-        <p>+7 (39041) 2-12-54</p>
-        <p>+7 (983) 190-93-98</p>
-      </div>
+    </section>
+
+    <!-- Блок Услуг -->
+    <section id="services" class="services-section">
+        <div class="container">
+            <h2>Наши услуги</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <h3>Терапия</h3>
+                    <p>Лечение кариеса, пульпита, эстетическая реставрация зубов современными композитами.</p>
+                </div>
+                <div class="service-card">
+                    <h3>Ортопедия</h3>
+                    <p>Все виды протезирования: съемные и несъемные протезы, коронки, восстановление зубного ряда.</p>
+                </div>
+                <div class="service-card">
+                    <h3>Профилактика</h3>
+                    <p>Профессиональная гигиена полости рта, удаление зубного камня и налета, фторирование.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Юридический блок (Требование Минздрава) -->
+    <section id="info" class="info-section">
+        <div class="container">
+            <h2>Правовая информация и реквизиты</h2>
+            <div class="info-grid">
+                <div class="info-block">
+                    <h3>ООО «СТОМАТОЛОГИЯ ВИЗИТ»</h3>
+                    <p><strong>Лицензия:</strong> № ЛО-19-01-000656</p>
+                    <p><strong>ИНН:</strong> 1904005050 | <strong>ОГРН:</strong> 1071901003019</p>
+                    <p><strong>Директор:</strong> Бычкова Нина Анатольевна</p>
+                </div>
+                <div class="info-block">
+                    <h3>Режим работы</h3>
+                    <p>Пн–Пт: 9:00 — 17:00</p>
+                    <p>Сб–Вс: выходной</p>
+                    <p><strong>Телефоны:</strong> +7 (39041) 2-12-54, +7 (983) 190-93-98</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Контакты -->
+    <section id="contacts" class="contacts-section">
+        <div class="container">
+            <h2>Контакты и схема проезда</h2>
+            <p>Адрес: республика Хакасия, Алтайский район, с. Белый Яр, ул. Ленина, 51А</p>
+            <!-- Сюда в будущем можно встроить легкую интерактивную карту Яндекса -->
+            <div class="map-placeholder">Карта проезда (ул. Ленина, 51А)</div>
+        </div>
+    </section>
+
+    <!-- Модальное окно записи (Popup) -->
+    <div id="booking-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn" onclick="closeModal()">&times;</span>
+            <h3>Запись на приём</h3>
+            <form id="lead-form">
+                <input type="text" placeholder="Ваше имя" required>
+                <input type="tel" placeholder="Номер телефона" required>
+                <label class="checkbox-label">
+                    <input type="checkbox" required>
+                    <span>Я согласен на <a href="#">обработку персональных данных</a> в соответствии с 152-ФЗ.</span>
+                </label>
+                <button type="submit" class="btn-primary">Отправить заявку</button>
+            </form>
+        </div>
     </div>
-  </div>
 
-
-  <img src="/public/images/slide1_edit.jpg" id="banner" class="img-fluid" alt="">
-
-  <div id="map">
-    <h2>Схема проезда</h2>
-    <script type="text/javascript" charset="utf-8" async
-      src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A42f215b0d99b654c08fff87f9a0bdbd211abe42be92eebee38649528a07516c9&amp;width=100%25&amp;height=300&amp;lang=ru_RU&amp;scroll=true"></script>
-  </div>
-
-  <div class="container">
-
-    <div id="props">
-      <h2>Реквизиты</h2>
-      <table class="table">
-        <tbody>
-          <tr>
-            <td>Наименование</td>
-            <td>ООО&laquo;СТОМАТОЛОГИЯ ВИЗИТ&raquo;</td>
-          </tr>
-          <tr>
-            <td>Лицензия</td>
-            <td>ЛО-19-01-000656</td>
-          </tr>
-          <tr>
-            <td>ОГРН</td>
-            <td>1071901003019</td>
-          </tr>
-          <tr>
-            <td>ИНН</td>
-            <td>1904005050</td>
-          </tr>
-          <tr>
-            <td>Почтовый индекс</td>
-            <td>655650</td>
-          </tr>
-          <tr>
-            <td>Адрес</td>
-            <td>республика Хакасия, Алтайский район, село Белый Яр, улица Ленина 51А</td>
-          </tr>
-          <tr>
-            <td>Телефон</td>
-            <td>(39041) 2-12-54, 8-983-190-93-98</td>
-          </tr>
-          <tr>
-            <td>E-mail</td>
-            <td>nina.bychkova.65@mail.ru</td>
-          </tr>
-          <tr>
-            <td>Директор</td>
-            <td>Бычкова Нина Анатольевна</td>
-          </tr>
-          <tr>
-            <td>Главный бухгалтер</td>
-            <td>нет</td>
-          </tr>
-        </tbody>
-      </table>
-    </div>
-  
-    <div id="bank">
-      <h2>Банковские реквизиты</h2>
-      <table class="table">
-        <tbody>
-          <tr>
-            <td>р/с</td>
-            <td>40702810900010147286</td>
-          </tr>
-          <tr>
-            <td>Банк</td>
-            <td>ООО&laquo;Хакасский муниципальный банк&raquo;</td>
-          </tr>
-          <tr>
-            <td>БИК</td>
-            <td>049514745</td>
-          </tr>
-          <tr>
-            <td>кор/с</td>
-            <td>30101810900000000745</td>
-          </tr>
-        </tbody>
-      </table>
-    </div>
-  </div>
-
-
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-    crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-    crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-    crossorigin="anonymous"></script>
+    <script src="./public/javascript/script.js"></script>
 </body>
-
 </html>
